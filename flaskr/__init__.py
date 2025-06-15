@@ -9,7 +9,7 @@ def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
 
     # Set up default configuration for the app
-    # SECRET_KEY -> 'dev' for development but should be overriden in deployment.
+    # SECRET_KEY -> 'dev' for development but should be overridden in deployment.
     # DATABASE -> SQLite database path (app.instance_path => instance folder path).
     app.config.from_mapping(
         SECRET_KEY='dev',
@@ -39,8 +39,13 @@ def create_app(test_config=None):
     from . import db
     db.init_app(app)
 
-    # Register the auth blueprint
+    # Auth blueprint
     from . import auth
     app.register_blueprint(auth.bp)
+
+    # Blog blueprint
+    from . import blog
+    app.register_blueprint(blog.bp)
+    app.add_url_rule('/', endpoint='index')
         
     return app

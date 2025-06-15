@@ -48,7 +48,7 @@ sqlite3.register_converter(
 )
 
 def init_app(app):
-    """Registeres the `close_db` and init_db_command` functions."""
+    """Registers the `close_db` and init_db_command` functions."""
 
     # Call the `close_db()` functions when cleaning up
     app.teardown_appcontext(close_db)
