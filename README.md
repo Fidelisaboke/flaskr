@@ -41,3 +41,8 @@ pip install -r requirements.txt
 ```bash
 flask --app flaskr run
 ```
+
+## Acknowledgement
+I would like to thank the creators of Flask micro-framework, and the maintainers of the Flask Tutorial, for offering a
+practical approach to learning Flask.
+- [Flask Tutorial](https://flask.palletsprojects.com/en/stable/tutorial/)
