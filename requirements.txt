@@ -1,7 +1,16 @@
 blinker==1.9.0
+build==1.2.2.post1
 click==8.2.1
+coverage==7.9.1
 Flask==3.1.1
+-e git+ssh://git@github.com/Fidelisaboke/flaskr.git@8588e9c4a41f29b750b052935eb0d45ca466b7e7#egg=flaskr
+iniconfig==2.1.0
 itsdangerous==2.2.0
 Jinja2==3.1.6
 MarkupSafe==3.0.2
+packaging==25.0
+pluggy==1.6.0
+Pygments==2.19.1
+pyproject_hooks==1.2.0
+pytest==8.4.0
 Werkzeug==3.1.3
